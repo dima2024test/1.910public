@@ -78,17 +78,10 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Id</field>
+            <field>pharos__Category__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>a0Caj00000QbGZuEAN</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>a0Caj00000Qb9myEAB</stringValue>
+                <stringValue>Flow</stringValue>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -103,17 +96,17 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>pharos__Functional_Area__c</field>
+            <field>pharos__Category__c</field>
             <operator>EqualTo</operator>
             <value>
                 <stringValue>Flow</stringValue>
             </value>
         </filters>
         <object>pharos__Issue__c</object>
-        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>ListOfIds</name>
         <dataType>SObject</dataType>
